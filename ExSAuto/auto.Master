@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="auto.master.cs" Inherits="ExSAuto.auto" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Portal Auto</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="infinite-slider.css" rel="stylesheet">
+<script src="carousel.js" type="text/javascript"></script>
+
+
+
+
+
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            background-color: #ffffff;
+        }
+        .auto-style3 {
+            width: 200px;
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style5 {
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style7 {
+            text-align: center;
+        }
+        .auto-style8 {
+            width: 101%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #CCCCCC;
+        }
+        .auto-style9 {
+            width: 160px;
+            height: 153px;
+        }
+        .auto-style11 {
+            width: 257px;
+            height: 23px;
+            text-align: center;
+        }
+        .auto-style12 {
+            width: 194px;
+            height: 23px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server" class="auto-style1">
+        <div class="auto-style7">
+            <div class="auto-style7">
+            <img src="Imagens/Banner.png" class="auto-style1" style="height: 405px; width: 1200px" /><br />
+                <table class="auto-style8">
+                    <tr>
+                        <td class="auto-style3">
+                            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/default.aspx">HOMEPAGE</asp:LinkButton>
+                        </td>
+                        <td class="auto-style11">
+                            <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/calculo.aspx">CALCULAR O FINANCIAMENTO</asp:LinkButton>
+                        </td>
+                        <td class="auto-style12">
+                            <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Contactos.aspx">CONCTACTOS</asp:LinkButton>
+                        </td>
+                        <td class="auto-style5">PESQUISA:&nbsp;&nbsp;
+                            <asp:TextBox ID="TextBox1" runat="server" Width="235px"></asp:TextBox>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                <p>
+                    <br />
+                </p>
+                
+            </asp:ContentPlaceHolder>
+        </div>
+       <br />
+       <h2>Os nossos Parceiros</h2><br />
+            <div class="container">
+       <section class= "customer-logos slider">
+         <div class ="slide"><img src="Logos/4.jpg"></div>
+         <div class ="slide"><img src="Logos/5.jpg"></div>
+         <div class ="slide"><img src="Logos/bmw.png"></div>
+         <div class ="slide"><img src="Logos/chevy.png"></div>
+         <div class ="slide"><img src="Logos/ford.png"></div>    
+         <div class ="slide"><img src="Logos/honda.png"></div>
+         <div class ="slide"><img src="Logos/logoMercedes.png" class="auto-style9"></div>
+         </section>
+         </div>
+        <br />
+        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/inserir.aspx">Inserir Carros</asp:LinkButton>
+        <br />
+        <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Contactos.aspx">Contactos</asp:LinkButton>
+        <br />
+
+         <div style="color: #000080; font-size: medium; font-weight: 700; font-family: Arial, Helvetica, sans-serif; text-align: center; background-color: #CCCCCC"> 2021 - Todos os Direitos  Reservados - Turma Prog 07- LX</div>
+    </form>
+</body>
+</html>
